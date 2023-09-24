@@ -1,0 +1,25 @@
+<!--1+ required elements-->
+    <!ELEMENT students (student+)>
+
+    <!--order of Student element-->
+    <!ELEMENT student (FirstName, MiddleName, LastName, PreferredName, Email, Phone,
+    StatusYear, GPA, Major, Minor, StatusEnrolment, Advisor, EnrollmentDate, GraduationDate)>
+
+    <!--Students Elements-->
+    <!ELEMENT FirstName (#PCDATA)>          <!--Frist Name-->
+    <!ELEMENT MiddleName (#PCDATA)>         <!--Middle Name-->
+    <!ELEMENT LastName (#PCDATA)>           <!--Last Name-->
+    <!ELEMENT PreferredName (#PCDATA)>      <!--What to call Student-->
+    <!ELEMENT Email (#PCDATA)>              <!--Email-->
+    <!ELEMENT Phone (#PCDATA)>              <!--Students Phone # -->
+    <!ELEMENT StatusYear (#PCDATA)>         <!--Year of enrolment-->
+    <!ELEMENT GPA (#PCDATA)>                <!--GPA-->
+    <!ELEMENT Major (#PCDATA)>              <!-- Major-->
+    <!ELEMENT Minor (#PCDATA)>              <!-- Minor-->
+    <!ELEMENT StatusEnrolment (#PCDATA)>         <!--Fulltime/Parttime/graduated/withdrawn-->
+    <!ELEMENT Advisor (#PCDATA)>            <!--Adviser-->
+    <!ELEMENT EnrollmentDate (#PCDATA)>     <!--Enrollment date-->
+    <!ELEMENT GraduationDate (#PCDATA)>     <!--Graduation date-->
+
+    <!ATTLIST student
+        StudentID (#PCDATA)> #REQUIRED  <!--ID of student-->
